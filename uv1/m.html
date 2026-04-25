@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stmary's University Management</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+
+<!-- heade -->
+<header class="main-header">
+    <div class="logo-area">
+        <img src="s1.jpg" alt="University Logo">
+        <h1>Stmary's University</h1>
+    </div>
+    <nav class="nav-links">
+        <a href="#" id="navHome">Home</a>
+        <a href="#" id="navDepartments">Departments</a>
+        <a href="#" id="navAbout">About</a>
+        <a href="#" id="navFeedback">Feedback</a>
+        <a href="#" id="navLogin">Login</a>
+        <a href="clubs.html">clubs</a>
+    </nav>
+    <div class="hamburger" id="hamburger">☰</div>
+</header>
+
+<!-- home -->
+<section id="home" class="page-section active">
+    <h2 class="title">Welcome to Stmary's University</h2>
+    <div class="image-section">
+        
+    </div>
+    <div class="about-section">
+        <h3>About Our University</h3>
+        <p>Stmary's University provides quality education and professional training to prepare students for excellence.</p>
+    </div>
+</section>
+
+<!-- login -->
+<section id="login" class="page-section">
+    <h2 class="title">Login</h2>
+    <div class="login-box">
+        <label>User Type</label>
+        <select id="userType">
+            <option value="">Select User Type</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="rep">Class Representative</option>
+        </select>
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter password">
+        <button id="loginBtn">Login</button>
+    </div>
+</section>
+
+<!-- student dashboard -->
+<section id="studentDashboard" class="page-section">
+    <h2 class="title">Student Dashboard</h2>
+    <div class="dashboard-card">
+        
+        <button id="viewAttendanceBtn">View Attendance</button>
+        <button id="viewGradesBtn">View Grades</button>
+    </div>
+</section>
+
+<!-- teacher dasboard -->
+<section id="teacherDashboard" class="page-section">
+    <h2 class="title">Teacher Dashboard</h2>
+    <div class="dashboard-card">
+        
+        <button id="markAttendanceBtn">Mark Student Attendance</button>
+    </div>
+</section>
+
+<!-- rep dashboard  -->
+<section id="repDashboard" class="page-section">
+    <h2 class="title">Class Representative Dashboard</h2>
+    <div class="dashboard-card">
+       
+        <button id="markTeacherBtn">Mark Teacher Attendance</button>
+    </div>
+</section>
+
+<!-- departments -->
+<section id="departments" class="page-section">
+    <h2 class="title">Departments</h2>
+    <div class="department-container">
+        <div class="department-card" id="deptCS">Computer Science</div>
+        <div class="department-card" id="deptAccounting">Accounting</div>
+        <div class="department-card" id="deptEconomics">Economics</div>
+        <div class="department-card" id="deptTourism">Tourism</div>
+        <div class="department-card" id="deptHospitality">Hospitality</div>
+    </div>
+    <div id="courseList" class="course-list"></div>
+</section>
+
+<!-- student attendance -->
+<section id="studentAttendance" class="page-section">
+    <h2 class="title">My Attendance</h2>
+    <div class="attendance-summary">
+        <div>
+            <span class="attendance-value">85%</span>
+            <p>Attendance Rate</p>
+        </div>
+        <div>
+            <span class="attendance-value">3</span>
+            <p>Days Absent</p>
+        </div>
+    </div>
+    <table>
+        <tr><th>Date</th><th>Course</th><th>Status</th></tr>
+        <tr><td>01/01/2026</td><td>Internet Programming</td><td>Present</td></tr>
+    </table>
+</section>
+<!--  mark student attendance  -->
+<section id="markStudentAttendance" class="page-section">
+    <h2 class="title">Mark Student Attendance</h2>
+    <div class="attendance-list">
+        <label><input type="checkbox"> Student 1</label>
+        <label><input type="checkbox"> Student 2</label>
+        <label><input type="checkbox"> Student 3</label>
+        <label><input type="checkbox"> Student 4</label>
+        <button id="saveAttendanceBtn">Save Attendance</button>
+    </div>
+</section>
+
+<!-- TEACHER ATTENDANCE (REP)  -->
+<section id="teacherAttendance" class="page-section">
+    <h2 class="title">Teacher Attendance</h2>
+    <label>Select Department</label>
+    <select id="repDept">
+        <option value="">Select Department</option>
+        <option value="cs">Computer Science</option>
+        <option value="accounting">Accounting</option>
+        <option value="economics">Economics</option>
+        <option value="tourism">Tourism</option>
+        <option value="hospitality">Hospitality</option>
+    </select>
+    <div id="repTeachers" class="attendance-list"></div>
+    <button id="saveTeacherAttendanceBtn">Confirm</button>
+</section>
+
+<!-- FEEDBACK  -->
+<section id="feedback" class="page-section">
+    <h2 class="title">Feedback</h2>
+    <label>Select Department</label>
+    <select id="feedbackDept">
+        <option value="">Select Department</option>
+        <option value="cs">Computer Science</option>
+        <option value="accounting">Accounting</option>
+        <option value="economics">Economics</option>
+        <option value="tourism">Tourism</option>
+        <option value="hospitality">Hospitality</option>
+    </select>
+    <label>Select Teacher</label>
+    <select id="feedbackTeacher"><option value="">Select Teacher</option></select>
+    <textarea placeholder="Write your feedback here..."></textarea>
+    <button id="submitFeedbackBtn">Submit Feedback</button>
+</section>
+
+<!--  ABOUT  -->
+<section id="about" class="page-section">
+    <h2 class="title">About University</h2>
+    <p><strong>Mission:</strong> Provide quality education.</p>
+    <p><strong>Vision:</strong> Be a leading academic institution.</p>
+    <p><strong>Contact:</strong> info@stmary'suniversity.edu</p>
+</section>
+
+<!-- FOOTER  -->
+<footer class="main-footer">
+    <p>© 2026 stmary's University</p>
+</footer>
+
+<script src="m.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Clubs</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Student Clubs</h1>
+</header>
+
+<section class="page-section active">
+    <div class="department-container">
+        <div class="department-card club-card" style="background-color:#fcccff;">
+            <h3>Programming Club</h3>
+            <p>Coding and problem solving</p>
+            <button onclick="joinClub('Programming Club')">Join</button>
+        </div>
+        <div class="department-card club-card" style="background-color:#f4ffcc;">
+            <h3>Art Club</h3>
+            <p>Creative arts and design</p>
+            <button onclick="joinClub('Art Club')">Join</button>
+        </div>
+        <div class="department-card club-card" style="background-color:#ffcce4;">
+            <h3>Tourism Club</h3>
+            <p>Tourism and hospitality activities</p>
+            <button onclick="joinClub('Tourism Club')">Join</button>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <p>© 2026 stmary's University</p>
+</footer>
+
+<script>
+function joinClub(clubName) {
+    alert("You joined " + clubName);
+}
+</script>
+</body>
+</html>
